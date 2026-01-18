@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description"
             content="A heartfelt tribute to Thalapathy Vijay - celebrating his legendary cinema journey and his inspiring transition to political leadership with TVK." />
-        <title>Thalapathy Vijay - From Cinema Legend to People's Leader |
-            TVK</title>
+        <title>Thalaivaa❤️💛</title>
         <link rel="icon" type="image/png" sizes="32x32" href="assets/viji.webp">
 
         <link
@@ -137,9 +136,6 @@ background: url("assets/thalapathyvj.webp") center/cover no-repeat;
         transition: all 0.3s ease;
       }
 
-      .navbar.scrolled {
-        /* box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3); */
-      }
 
       .navbar-brand {
         font-family: 'Cinzel', serif;
@@ -2372,6 +2368,19 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 </script>
 
+  <script>
+        const titles = [
+            "Thalapathy❤️",
+            "Vijay😍",
+            "TVK💛"
+        ];
 
+        let index = 0;
+
+        setInterval(() => {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }, 2000);
+    </script>
     </body>
 </html>
