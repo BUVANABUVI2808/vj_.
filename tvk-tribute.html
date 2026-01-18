@@ -1,0 +1,2377 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="A heartfelt tribute to Thalapathy Vijay - celebrating his legendary cinema journey and his inspiring transition to political leadership with TVK." />
+        <title>Thalapathy Vijay - From Cinema Legend to People's Leader |
+            TVK</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/viji.webp">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <style>
+      :root {
+        --primary-yellow: #ffea00;
+        --primary-red: #ff0000;
+        --dark-bg: #0a0a0a;
+        --card-bg: rgba(255, 255, 255, 0.05);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section
+      {
+                min-height: 100vh;
+
+      }
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background: var(--dark-bg);
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 50%, #1a1a00 70%);
+        overflow: hidden;
+      }
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+background: url("assets/thalapathyvj.webp") center/cover no-repeat;
+        /* animation: slowZoom 20s ease-in-out infinite alternate; */
+      }
+
+      @keyframes slowZoom {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.1); }
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .hero-title {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-weight: 900;
+        background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-red) 50%, var(--primary-yellow) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1.5rem;
+        animation: titleGlow 3s ease-in-out infinite;
+      }
+
+      @keyframes titleGlow {
+        0%, 100% { filter: brightness(1); }
+        50% { filter: brightness(1.3); }
+      }
+
+      .emotional-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        background: rgba(255, 69, 0, 0.2);
+        border: 2px solid var(--primary-red);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+      /* .tvk-flag {
+    width: 220px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tvk-flag:hover,
+.tvk-flag.active {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.9));
+} */
+ .tvk-flag {
+    width: 220px;
+    cursor: pointer;
+}
+
+
+
+      /* Navigation */
+      .navbar {
+/* background: transparent !important; */
+        /* backdrop-filter: blur(10px); */
+        /* border-bottom: 2px solid var(--primary-yellow); */
+        transition: all 0.3s ease;
+      }
+
+      .navbar.scrolled {
+        /* box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3); */
+      }
+
+      .navbar-brand {
+        font-family: 'Cinzel', serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nav-link {
+        color: var(--primary-yellow) !important;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-link:hover {
+        color: var(--primary-red) !important;
+        transform: translateY(-2px);
+      }
+
+      /* Section Styles */
+      .section-title {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(2rem, 5vw, 4rem);
+        text-align: center;
+        margin-bottom: 3rem;
+        background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 900;
+      }
+
+      /* Movie Cards with Images */
+      .movie-card {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 69, 0, 0.1));
+        border-radius: 15px;
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        transition: all 0.3s ease;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .movie-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--primary-yellow);
+        box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+      }
+
+      .movie-poster {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .movie-info {
+        padding: 1.5rem;
+      }
+
+      .movie-year {
+        font-family: 'Cinzel', serif;
+        font-size: 1.3rem;
+        color: var(--primary-red);
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+      }
+
+      .movie-title {
+        font-size: 1.2rem;
+        color: var(--primary-yellow);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .movie-role {
+        color: #cccccc;
+        font-size: 0.9rem;
+        font-style: italic;
+      }
+
+      /* TVK Flag Section */
+      .tvk-flag-section {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 69, 0, 0.2));
+        padding: 4rem 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .tvk-flag {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border: 3px solid var(--primary-yellow);
+        border-radius: 15px;
+        box-shadow: 0 10px 50px rgba(255, 215, 0, 0.5);
+        /* animation: flagWave 3s ease-in-out infinite; */
+      }
+
+      /* @keyframes flagWave {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      } */
+
+      /* Song Cards */
+      .song-card {
+        background: rgba(10, 10, 10, 0.8);
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .song-card:hover {
+        transform: scale(1.05);
+        border-color: var(--primary-yellow);
+        box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+      }
+
+      .song-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-yellow);
+      }
+
+      /* Jana Nayagan Section */
+      .jana-section {
+        background: linear-gradient(135deg, rgba(255, 69, 0, 0.2) 0%, rgba(10, 10, 10, 0.9) 100%);
+        padding: 6rem 0;
+        border-top: 3px solid var(--primary-red);
+        border-bottom: 3px solid var(--primary-red);
+        position: relative;
+      }
+
+      .jana-poster {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        border: 5px solid var(--primary-yellow);
+        box-shadow: 0 20px 60px rgba(255, 215, 0, 0.6);
+        margin: 0 auto;
+        display: block;
+      }
+
+      /* TVK Section */
+      .tvk-section {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 69, 0, 0.1) 100%);
+        padding: 6rem 0;
+        border-radius: 20px;
+      }
+
+      .tvk-card {
+        background: rgba(10, 10, 10, 0.8);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 3px solid var(--primary-yellow);
+        text-align: center;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .tvk-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 50px rgba(255, 215, 0, 0.4);
+        border-color: var(--primary-red);
+      }
+
+      .tvk-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--primary-yellow);
+      }
+
+      /* Quote Cards */
+      .quote-card {
+        background: rgba(10, 10, 10, 0.8);
+        padding: 2rem;
+        border-radius: 20px;
+        border-left: 5px solid var(--primary-yellow);
+        margin: 2rem 0;
+      }
+
+      .quote-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: var(--primary-yellow);
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      /* Fan Cards */
+      .fan-card {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 69, 0, 0.1));
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .fan-card:hover {
+        transform: scale(1.05);
+        border-color: var(--primary-yellow);
+        box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+      }
+
+      /* Filter Buttons */
+      .filter-btn {
+        background: rgba(255, 215, 0, 0.2);
+        border: 2px solid var(--primary-yellow);
+        color: var(--primary-yellow);
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0.5rem;
+      }
+
+      .filter-btn:hover, .filter-btn.active {
+        background: var(--primary-yellow);
+        color: var(--dark-bg);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+      }
+
+      /* Stats */
+      .stat-card {
+        background: rgba(10, 10, 10, 0.8);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 2px solid var(--primary-yellow);
+        text-align: center;
+      }
+
+      .stat-number {
+        font-family: 'Cinzel', serif;
+        font-size: 3rem;
+        color: var(--primary-yellow);
+        font-weight: 900;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--dark-bg);
+        padding: 3rem 0;
+        border-top: 3px solid var(--primary-yellow);
+      }
+
+      /* Scroll Indicator */
+      .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scrollBounce 2s ease-in-out infinite;
+        font-size: 2rem;
+        color: var(--primary-yellow);
+      }
+
+      @keyframes scrollBounce {
+        0%, 100% { transform: translateX(-50%) translateY(0); }
+        50% { transform: translateX(-50%) translateY(10px); }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .movie-poster {
+          height: 200px;
+        }
+
+        .emotional-badge {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Image placeholder for movies without posters */
+      .movie-placeholder {
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        border-radius: 10px;
+      }
+       .tvk-social {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #ffea00; /* TVK Yellow */
+    border: 2px solid #ff0000; /* TVK Red */
+    background: rgba(255, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tvk-social:hover {
+    background: linear-gradient(135deg, #ffea00, #ff0000);
+    color: #000;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+.jana-poster {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.jana-poster.active,
+.jana-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+}
+
+
+
+    </style>
+
+        <!-- <style>
+    :root {
+      --primary-yellow: #ffea00;
+      --primary-red: #ff0000;
+      --dark-bg: #0a0a0a;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--dark-bg);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      margin-top: 100px;
+    }
+
+    /* HERO */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 50%, #1a1a00 70%);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.2;
+      background: url("thalapathyvj.webp") center/cover no-repeat;
+    }
+
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .emotional-badge {
+      display: inline-flex;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      background: rgba(255,69,0,.25);
+      border: 2px solid var(--primary-red);
+      backdrop-filter: blur(10px);
+    }
+
+    /* NAVBAR (Bootstrap + custom) */
+    .navbar {
+      background: transparent !important; /* bootstrap bg-transparent behaviour */
+      backdrop-filter: blur(12px);
+      transition: .3s ease;
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 4px 20px rgba(255,215,0,.35);
+    }
+
+    .navbar-brand {
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link {
+      color: var(--primary-yellow) !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-red) !important;
+      transform: translateY(-2px);
+    }
+
+    /* COMMON CARDS */
+    .tvk-card, .song-card, .fan-card, .stat-card {
+      background: rgba(10,10,10,.85);
+      border-radius: 1rem;
+      border: 2px solid rgba(255,215,0,.3);
+      padding: 1.5rem;
+      transition: .3s ease;
+    }
+
+    .tvk-card:hover, .song-card:hover, .fan-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 40px rgba(255,215,0,.35);
+    }
+
+    /* MOVIES */
+    .movie-card {
+      height: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 2px solid rgba(255,215,0,.3);
+      background: linear-gradient(135deg, rgba(255,215,0,.1), rgba(255,69,0,.1));
+      transition: .3s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .movie-poster {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .movie-placeholder {
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--primary-yellow), var(--primary-red));
+    }
+
+    /* SCROLL ICON */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: var(--primary-yellow);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% {transform: translate(-50%,0)}
+      50% {transform: translate(-50%,10px)}
+    }
+  </style> -->
+
+    </head>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const flag = document.getElementById("janaPoster");
+    const song = document.getElementById("tvkSong");
+
+    flag.addEventListener("click", function () {
+        song.currentTime = 0;
+        song.play()
+            .then(() => console.log("Song playing ✅"))
+            .catch(err => console.log("Play error ❌", err));
+    });
+});
+
+
+</script>
+
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#home">THALAPATHY</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#nav"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#journey">Journey</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#movies">Movies</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#songs">Songs</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#tvk">TVK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section id="home" class="hero-section text-center">
+            <div class="hero-bg"></div>
+            <div class="container position-relative">
+                <div class="emotional-badge mb-4">💔 Farewell to Cinema 🎬</div>
+                <h1 class="hero-title">THALAPATHY VIJAY</h1>
+                <p class="fs-4 text-warning">From Reel Hero to Real Hero</p>
+                <p class="lead text-light">30 years of cinema. A lifetime of
+                    service ahead.</p>
+                <div class="emotional-badge mt-3">🏛️ Welcome to Politics</div>
+            </div>
+            <div class="scroll-indicator"><i
+                    class="bi bi-chevron-down"></i></div>
+        </section>
+
+        <!-- JOURNEY -->
+        <section id="journey" class="py-5 mt-5">
+            <div class="container mt-10">
+                <h2 class="text-center text-warning mb-3">The Great
+                    Transition</h2>
+                <div class="row g-4">
+                    <div class="col-md-4"><div class="tvk-card text-center"> <h3
+                                class="text-warning mb-3">Cinema Era</h3>
+                            <p class="text-light">30+ years of unforgettable
+                                performances, 68+ blockbuster
+                                films.</p></div></div>
+                    <div class="col-md-4"><div class="tvk-card text-center"> <h3
+                                class="text-danger mb-3">The Transition</h3>
+                            <p class="text-light">A courageous decision to
+                                embrace public service.</p></div></div>
+                    <div class="col-md-4"><div class="tvk-card text-center"> <h3
+                                class="text-warning mb-3">Political Era</h3>
+                            <p class="text-light">Leading TVK with vision and
+                                integrity.</p></div></div>
+                </div>
+            </div>
+
+            <div class="container mt-5 text-center">
+                <h2 class="section-title">TVK - தமிழக வெற்றி கழகம்</h2>
+                <p class="text-warning fs-4 mb-4">Tamilaga Vettri Kazhagam</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <a
+                            href="https://youtu.be/WjfFlpP_2Ko?si=TCN2Ey7H0M3_D5Ha">
+                           <img src="assets/tvk.webp"
+     alt="TVK Flag"
+     class="tvk-flag mb-4"
+     id="tvkFlag">
+
+
+
+</a>
+                        <p class="text-light lead">
+                            The flag of TVK waves proudly in yellow and
+                            red—colors representing prosperity, courage, and the
+                            fighting spirit of Tamil people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOVIES (content unchanged – Bootstrap grid used) -->
+        <section id="movies" class="py-5 bg-dark">
+            <div class="container">
+                <h2 class="text-center text-warning mb-5">Complete
+                    Filmography</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="movie-card">
+                            <img src="assets/nalaya.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1992</div>
+                                <div class="movie-title">Naalaiya Theerpu</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/senthoora.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1993</div>
+                                <div class="movie-title">Senthoora Pandi</div>
+                                <div class="movie-role">Brother Of Vijay
+                                    Khanth</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/rasigan.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1994</div>
+                                <div class="movie-title">Rasigan</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/rajavin.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1995</div>
+                                <div class="movie-title">Rajavin
+                                    Parvaiyile</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/deva.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1995</div>
+                                <div class="movie-title">Deva</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/vishnu.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1995</div>
+                                <div class="movie-title">Vishnu</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/chandra.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1995</div>
+                                <div class="movie-title">Chandralekha</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/coim.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1996</div>
+                                <div class="movie-title">Coimbatore
+                                    Mapillai</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ALL OTHER MOVIES REMAIN SAME STRUCTURE -->
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/poove.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1996</div>
+                                <div class="movie-title">Poove Unakkaga</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/Vasantha_Vaasal.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1996</div>
+                                <div class="movie-title">Vasantha Vasal</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/Maanbumigu_Maanavan.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1996</div>
+                                <div class="movie-title">Manbumigu Manavan</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/selva.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1996</div>
+                                <div class="movie-title">Selva</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img
+                                src="assets/LANDSCAPE_43_KALLAMYELLAM-KATHIRUPEN_4.3.jpg"
+                                alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1997</div>
+                                <div class="movie-title">Kalamellam
+                                    Kathirupen</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/love.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1997</div>
+                                <div class="movie-title">Love Today</div>
+                                <div class="movie-role">Romantic Comedy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/once.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1997</div>
+                                <div class="movie-title">Once More</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/nerukku-ner.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1997</div>
+                                <div class="movie-title">Nerukku Ner</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/l.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1997</div>
+                                <div class="movie-title">Kadhalukku
+                                    Mariyadhai</div>
+                                <div class="movie-role">Romantic Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/nv.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1998</div>
+                                <div class="movie-title">Ninaithen Vanthai</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/priyamudan.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1998</div>
+                                <div class="movie-title">Priyamudan</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/images.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1998</div>
+                                <div class="movie-title">Nilave Vaa</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/thullatha.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1999</div>
+                                <div class="movie-title">Thulladha Manamum
+                                    Thullum</div>
+                                <div class="movie-role">Romantic Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/nilave va.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1999</div>
+                                <div class="movie-title">Endrendrum
+                                    Kaadhal</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/im.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1999</div>
+                                <div class="movie-title">Nenjinile</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/mk.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">1999</div>
+                                <div class="movie-title">Minsara Kanna</div>
+                                <div class="movie-role">Comedy Romantic
+                                    Movie</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="1990s">
+                        <div class="movie-card">
+                            <img src="assets/kn.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2000</div>
+                                <div class="movie-title">Kannukkul Nilavu</div>
+                                <div class="movie-role">First Major Hit</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2000s Movies -->
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/kushi.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2000</div>
+                                <div class="movie-title">Kushi</div>
+                                <div class="movie-role">Blockbuster
+                                    Romance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/priy.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2000</div>
+                                <div class="movie-title">Priyamanaavale</div>
+                                <div class="movie-role">Blockbuster
+                                    Romance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/frnds.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2001</div>
+                                <div class="movie-title">Friends</div>
+                                <div class="movie-role">Comedy Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/Badri_2001_poster.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2001</div>
+                                <div class="movie-title">Badri</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/shah.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2001</div>
+                                <div class="movie-title">Shajahan</div>
+                                <div class="movie-role">Love Movie</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/thamilan.avif" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2002</div>
+                                <div class="movie-title">Thamizhan</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/youth.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2002</div>
+                                <div class="movie-title">Youth</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/bag.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2002</div>
+                                <div class="movie-title">Baghavathi</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/vasee.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2003</div>
+                                <div class="movie-title">Vaseegara</div>
+                                <div class="movie-role">Love and Comedy
+                                    Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/pg.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2003</div>
+                                <div class="movie-title">Puthiya Geethai</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/thiru.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2003</div>
+                                <div class="movie-title">Thirumalai</div>
+                                <div class="movie-role">Mass Entertainer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/udhaya.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2004</div>
+                                <div class="movie-title">Udhaya</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/ghilli.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2004</div>
+                                <div class="movie-title">Ghilli</div>
+                                <div class="movie-role">Industry-Defining Mega
+                                    Hit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/madura.avif" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2004</div>
+                                <div class="movie-title">Madurey</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/thirupachi.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2005</div>
+                                <div class="movie-title">Thirupachi</div>
+                                <div class="movie-role">Action and emotional
+                                    Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/sn.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2005</div>
+                                <div class="movie-title">Sachein</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/siva.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2005</div>
+                                <div class="movie-title">Sivakasi</div>
+                                <div class="movie-role">Diwali Blockbuster</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/aadhi.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2006</div>
+                                <div class="movie-title">Aadhi Narayan</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/pokkiri.avif" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2007</div>
+                                <div class="movie-title">Pokkiri</div>
+                                <div class="movie-role">Career-Defining
+                                    Role</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/atm.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2007</div>
+                                <div class="movie-title">Azhagiya Tamil
+                                    Magan</div>
+                                <div class="movie-role">Dual Role</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/kuruvi.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2008</div>
+                                <div class="movie-title">Kuruvi</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/villu.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2009</div>
+                                <div class="movie-title">Villu</div>
+                                <div class="movie-role">Action and comedy
+                                    Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/v.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2009</div>
+                                <div class="movie-title">Vettaikaaran</div>
+                                <div class="movie-role">Action Entertainer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/Sura_Vijay.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2010</div>
+                                <div class="movie-title">Sura</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2010s Movies -->
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/kav.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2011</div>
+                                <div class="movie-title">Kavalan</div>
+                                <div class="movie-role">Emotional Love
+                                    Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/velu.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2011</div>
+                                <div class="movie-title">Velayudham</div>
+                                <div class="movie-role">Superhero Avatar</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/nanban.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2012</div>
+                                <div class="movie-title">Nanban</div>
+                                <div class="movie-role">Comedy Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/thupaki.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2012</div>
+                                <div class="movie-title">Thuppakki</div>
+                                <div class="movie-role">Military Intelligence
+                                    Officer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/thalaiva.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2013</div>
+                                <div class="movie-title">Thalaivaa</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/jilla.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2013</div>
+                                <div class="movie-title">Jilla</div>
+                                <div class="movie-role">Police Intelligence
+                                    Officer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/kathi.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2014</div>
+                                <div class="movie-title">Kaththi</div>
+                                <div class="movie-role">Social Message
+                                    Masterpiece</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/puli.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2015</div>
+                                <div class="movie-title">Puli</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/theri.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2016</div>
+                                <div class="movie-title">Theri</div>
+                                <div class="movie-role">Emotional Action
+                                    Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2000s">
+                        <div class="movie-card">
+                            <img src="assets/bai.jpg" alt="Movie" class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2017</div>
+                                <div class="movie-title">Bairava</div>
+                                <div class="movie-role">Action Drama</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/mersal.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2017</div>
+                                <div class="movie-title">Mersal</div>
+                                <div class="movie-role">Triple Role
+                                    Sensation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/sarkar.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2018</div>
+                                <div class="movie-title">Sarkar</div>
+                                <div class="movie-role">Political
+                                    Awakening</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2010s">
+                        <div class="movie-card">
+                            <img src="assets/bigil.avif" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2019</div>
+                                <div class="movie-title">Bigil</div>
+                                <div class="movie-role">Women Empowerment
+                                    Anthem</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020s Movies -->
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2020s">
+                        <div class="movie-card">
+                            <img src="assets/master.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2021</div>
+                                <div class="movie-title">Master</div>
+                                <div class="movie-role">Pandemic
+                                    Blockbuster</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2020s">
+                        <div class="movie-card">
+                            <img src="assets/beast.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2022</div>
+                                <div class="movie-title">Beast</div>
+                                <div class="movie-role">Spy Thriller</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2020s">
+                        <div class="movie-card">
+                            <img src="assets/varisu.jpg" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2023</div>
+                                <div class="movie-title">Varisu</div>
+                                <div class="movie-role">Family Entertainer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2020s">
+                        <div class="movie-card">
+                            <img src="assets/leo.webp" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2023</div>
+                                <div class="movie-title">Leo</div>
+                                <div class="movie-role">Lokesh Cinematic
+                                    Universe</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 movie-item"
+                        data-decade="2020s">
+                        <div class="movie-card">
+                            <img src="assets/goat.webp" alt="Movie"
+                                class="movie-poster">
+                            <div class="movie-info">
+                                <div class="movie-year">2024</div>
+                                <div class="movie-title">The Greatest Of All
+                                    Time (GOAT)</div>
+                                <div class="movie-role">Sci-fi Action
+                                    Spectacle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jana-section" id="jana">
+            <div class="container">
+                <div class="text-center">
+                    <div class="display-1 mb-4">🎬💔</div>
+                    <h2 class="section-title text-danger">JANA NAYAGAN</h2>
+                    <p
+                        class="fs-3 text-warning mb-4 fst-italic">"The People's Hero"
+                        - The Final Masterpiece</p>
+
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-6">
+                     <img src="assets/jana.webp"
+     alt="Jana Nayagan Poster"
+     class="jana-poster"
+     id="janaPoster">
+
+<audio id="tvkSong" preload="auto">
+    <source src="assets/poi_varava.mp3" type="audio/mpeg">
+</audio>
+<p class="text-warning small text-center mt-4">
+🔊 Click the poster to enable music
+</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <p class="lead text-light mb-4 px-3">
+                                As the final curtain falls on Thalapathy Vijay's
+                                illustrious acting career,
+                                <strong class="text-warning">Jana
+                                    Nayagan</strong> stands as a poignant
+                                farewell—
+                                a film that embodies everything he represents:
+                                courage, compassion, and unwavering commitment
+                                to the people.
+                            </p>
+
+                            <div class="quote-card my-5">
+                                <p class="quote-text">
+                                    "Every ending is a new beginning. While we
+                                    bid farewell to the actor who made us laugh,
+                                    cry, and dream,
+                                    we welcome the leader who will fight for our
+                                    rights, our future, and our Tamil Nadu."
+                                </p>
+                            </div>
+
+                            <div class="row g-4 mt-4">
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-number">68+</div>
+                                        <div class="text-light">Films</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-number">30+</div>
+                                        <div class="text-light">Years</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-number">∞</div>
+                                        <div class="text-light">Memories</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SONGS -->
+        <section id="songs" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center text-warning mb-5">Songs
+                    Sung by Thalapathy</h2>
+                <p class="text-center text-warning fs-5 mb-5">His Voice, Our
+                    Memories 🎵</p>
+                <div class="row g-4">
+
+                    <!-- 1990s -->
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/26V7TbUn2Uo?si=GNru_oTZqZQOagTr"><div
+                                    class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Bombay City Sukkha
+                                    Rotti</div>
+                                <div class="text-danger mb-2">From: Rasigan
+                                    (1994)</div>
+                                <p class="text-light small">Young Vijay’s
+                                    energetic folk-style debut vocal</p>
+                            </div></a></div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/ChVA1AqOEZk?si=T89iVHAJxnadxyej">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Aiyayo Alamelu</div>
+                                <div class="text-danger mb-2">From: Deva
+                                    (1995)</div>
+                                <p class="text-light small">Fun playful song
+                                    with village flavor</p>
+                            </div>
+                        </a></div>
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/wJlQs8cHG7Q?si=2Xjo5bZu4OC2IulW"><div
+                                    class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Oru Kaditham
+                                    Eluthinen</div>
+                                <div class="text-danger mb-2">From: Deva
+                                    (1995)</div>
+                                <p class="text-light small">Romantic song</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/O5DdTZmTlbU?si=bkpifb6w_b0OFPLE">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Oormila Oormila</div>
+                                <div class="text-danger mb-2">From: Once More
+                                    (1997)</div>
+                                <p class="text-light small">Youthful romantic
+                                    expression</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/k6UtKZ3ApLY?si=GAaEgtZ5SJB_uF62">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Chandira
+                                    Mandalathai</div>
+                                <div class="text-danger mb-2">From: Nilave Vaa
+                                    (1998)</div>
+                                <p class="text-light small">Melodic song with
+                                    classic 90s feel</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/iBvYtHE_5ME?si=7IM-5HBOYD7hvF1O">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Naan Thamathikira Style
+                                    Pathu</div>
+                                <div class="text-danger mb-2">From: Periyanna
+                                    (1999)</div>
+                                <p class="text-light small">Village celebration
+                                    song
+                                    with swag</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 2000s -->
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/k9ArKtynL4Y?si=cO3nn8KdgQdL6j3C">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Mississippi Nadhi
+                                    Kulunga</div>
+                                <div class="text-danger mb-2">From:
+                                    Priyamanaavale
+                                    (2000)</div>
+                                <p class="text-light small">Fun romantic number
+                                    with
+                                    western touch</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/Goids-mxjmc?si=nnujUp6MTLvTvh8R">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Ullathai Killadhe</div>
+                                <div class="text-danger mb-2">From: Thamizhan
+                                    (2002)</div>
+                                <p class="text-light small">Soft melody
+                                    expressing
+                                    heartfelt love</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/d8DKbrYUbFA?si=Pc-q3-CmBJyiZpw4">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Vaadi Vaadi</div>
+                                <div class="text-danger mb-2">From: Sachein
+                                    (2005)</div>
+                                <p class="text-light small">Playful flirtatious
+                                    youth anthem</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 2010s -->
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/WdMxxHMjmAM?si=nmFZH2e5uoDHXu93">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Google Google</div>
+                                <div class="text-danger mb-2">From: Thuppakki
+                                    (2012)</div>
+                                <p class="text-light small">Stylish modern youth
+                                    dance track</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/aQTpIZpRuf4?si=kEGVzoBPwzF-uF0p">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Vaanganna
+                                    Vanakkanganna</div>
+                                <div class="text-danger mb-2">From: Thalaivaa
+                                    (2013)</div>
+                                <p class="text-light small">Mass leader-style
+                                    intro
+                                    song</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/A64oFRutkeI?si=5sLYTN6TPyYEDL8A">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Kandaangi</div>
+                                <div class="text-danger mb-2">From: Jilla
+                                    (2013)</div>
+                                <p class="text-light small">Romantic melody
+                                    song</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/xZ92nnR1Pt8?si=0lo92Hhdc6RNoUaa">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Selfie Pulla</div>
+                                <div class="text-danger mb-2">From: Kaththi
+                                    (2014)</div>
+                                <p class="text-light small">Trend-setting youth
+                                    sensation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/oL4SC97QBoU?si=kpdduWh4jZX0IM7-">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Yendi Yendi</div>
+                                <div class="text-danger mb-2">From: Puli
+                                    (2015)</div>
+                                <p class="text-light small">Romantic fantasy
+                                    duet</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/RPTfXa_4jPg?si=m79e-ZtMLcOOFO4p">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Chella Kutti</div>
+                                <div class="text-danger mb-2">From: Theri
+                                    (2016)</div>
+                                <p class="text-light small">Romantic melody with
+                                    family warmth</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/xOlaVl9FAYk?si=sBUu1ZbVSB_-HAkp">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Papa Papa</div>
+                                <div class="text-danger mb-2">From: Bairava
+                                    (2016)</div>
+                                <p class="text-light small">Vibe song</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/rtd_VveAEaI?si=COqMuSf_oKew-HLG">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Verithanam</div>
+                                <div class="text-danger mb-2">From: Bigil
+                                    (2019)</div>
+                                <p class="text-light small">Celebration anthem
+                                    full
+                                    of energy</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 2020s -->
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/nCNqPgXDYhY?si=DnRYFvvIo1v3Qfi2">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Kutti Story</div>
+                                <div class="text-danger mb-2">From: Master
+                                    (2021)</div>
+                                <p class="text-light small">Philosophical
+                                    motivational song</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/PhxfspwMdww?si=yWlC8zMblHOoCAk5">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Jolly O Gymkhana</div>
+                                <div class="text-danger mb-2">From: Beast
+                                    (2022)</div>
+                                <p class="text-light small">Fun stylish party
+                                    track</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/unQlCp-lL6I?si=euNAKoRIcOiOZfF8">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Ranjithame</div>
+                                <div class="text-danger mb-2">From: Varisu
+                                    (2023)</div>
+                                <p class="text-light small">Family celebration
+                                    with
+                                    rural vibe</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/3wDiqlTNlfQ?si=nxO5849cAPD7ZSXJ">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Naa Ready</div>
+                                <div class="text-danger mb-2">From: Leo
+                                    (2023)</div>
+                                <p class="text-light small">Attitude-filled mass
+                                    performance</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/QqEarYb0Uaw?si=MSfM_fHTGlC3S3IQ">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Whistle Podu</div>
+                                <div class="text-danger mb-2">From: GOAT
+                                    (2024)</div>
+                                <p class="text-light small">High-energy comeback
+                                    celebration</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Final Film -->
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/KgpnfT5bgLY?si=bnmGBUwfYrWOEsnc">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Thalapathy Kacheri</div>
+                                <div class="text-danger mb-2">From: Jananayagan
+                                    (2026)</div>
+                                <p class="text-light small">High energy song</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4"><div class="song-card">
+                            <a
+                                href="https://youtu.be/fDvVCS17P5A?si=Uy_5Aye7JD3rMMPl">
+                                <div class="song-icon"><i
+                                        class="bi bi-music-note-beamed"></i></div>
+                                <div class="song-title">Chella Magale</div>
+                                <div class="text-danger mb-2">From: Jananayagan
+                                    (2026)</div>
+                                <p class="text-light small">Emotional farewell
+                                    melody</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="container">
+        <h2 class="section-title">Songs Sung by Thalapathy</h2>
+        <p class="text-center text-warning fs-5 mb-5">His Voice, Our Memories 🎵</p>
+
+
+      </div> -->
+        </section>
+
+        <!-- TVK Section -->
+        <section class="tvk-section py-5" id="tvk">
+            <div class="container">
+                <h2 class="section-title">TVK - Tamilaga Vettri Kazhagam</h2>
+                <p class="text-center text-warning fs-4 mb-2">தமிழக வெற்றி
+                    கழகம்</p>
+                <p class="text-center text-light lead mb-5 px-3">
+                    A new dawn for Tamil Nadu. TVK represents hope, change, and
+                    the promise of a better tomorrow.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><img src="assets/tvk-flag.jpg" alt
+                                    class="flag"
+                                    style="height: 50px; width: 65px;"></div>
+                            <h3 class="text-warning mb-3">Party Flag</h3>
+                            <p class="text-light">The flag of TVK waves proudly
+                                in yellow and red—colors representing prosperity
+                                and courage.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><i
+                                    class="bi bi-bullseye"></i></div>
+                            <h3 class="text-warning mb-3">Vision</h3>
+                            <p class="text-light">To build a Tamil Nadu where
+                                every citizen has access to quality education,
+                                healthcare, and employment.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><i
+                                    class="bi bi-balance-scale"></i></div>
+                            <h3 class="text-warning mb-3">Justice</h3>
+                            <p class="text-light">Fighting corruption, ensuring
+                                transparency, and establishing a government that
+                                truly serves the people.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><i
+                                    class="bi bi-tree-fill"></i></div>
+                            <h3 class="text-warning mb-3">Farmers First</h3>
+                            <p class="text-light">Prioritizing agricultural
+                                development and supporting the backbone of our
+                                economy—our farmers.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><i
+                                    class="bi bi-book-fill"></i></div>
+                            <h3 class="text-warning mb-3">Education</h3>
+                            <p class="text-light">World-class education for
+                                every child, building a generation of skilled
+                                and empowered youth.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tvk-card">
+                            <div class="tvk-icon"><i
+                                    class="bi bi-briefcase-fill"></i></div>
+                            <h3 class="text-warning mb-3">Employment</h3>
+                            <p class="text-light">Creating millions of jobs
+                                through industrial growth and skill development
+                                programs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="tvk-card border-danger">
+                            <h3 class="text-danger mb-4 fs-2">Party
+                                Principles</h3>
+                            <div class="row g-4">
+                                <div class="col-6 col-md-3">
+                                    <div class="display-4 mb-2">🤝</div>
+                                    <h5 class="text-warning">Unity</h5>
+                                    <p class="text-light small">One Tamil Nadu,
+                                        One Vision</p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="display-4 mb-2">💪</div>
+                                    <h5 class="text-warning">Strength</h5>
+                                    <p class="text-light small">Power to the
+                                        People</p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="display-4 mb-2">🌟</div>
+                                    <h5 class="text-warning">Progress</h5>
+                                    <p class="text-light small">Innovation &
+                                        Development</p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="display-4 mb-2">❤️</div>
+                                    <h5 class="text-warning">Compassion</h5>
+                                    <p class="text-light small">Care for Every
+                                        Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section class="py-5 bg-dark" id="quotes">
+            <div class="container">
+                <h2 class="section-title">Iconic Quotes & Messages</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "Success is not about how much money you make, it's about the difference you make in people's lives."
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Thalapathy
+                                Vijay</p>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "Cinema gave me fame, but politics will give me
+                                the opportunity to serve.
+                                I'm not leaving cinema behind; I'm taking its
+                                lessons forward to create real change."
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Thalapathy
+                                Vijay</p>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "The greatest role I will ever play is not on screen, but in the lives of the people of Tamil Nadu."
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Thalapathy
+                                Vijay</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-center text-warning fs-2 mt-5 mb-4">Messages
+                    from Fans 💛</h3>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "We'll miss you on screen, Thalapathy, but we're
+                                excited to see you lead us in real life.
+                                Your sacrifice for the people shows your true
+                                character."
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Rajesh,
+                                Chennai</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "From entertaining us to empowering us—this is
+                                the evolution of a true leader.
+                                TVK will bring the change Tamil Nadu needs!"
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Priya,
+                                Coimbatore</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "Jana Nayagan isn't just a movie title—it's who
+                                you've always been.
+                                Thank you for 30 years of memories and for
+                                choosing to serve us."
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Kumar,
+                                Madurai</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "Every film taught us something valuable. Now
+                                you'll teach us through action,
+                                not just words. We're with you, Thalapathy!"
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Lakshmi,
+                                Trichy</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "The screen will miss your presence, but Tamil
+                                Nadu needs your leadership.
+                                This is the greatest role of your life!"
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Arun,
+                                Salem</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="fan-card">
+                            <p class="text-warning mb-3">
+                                "You've always been a hero on screen. Now you'll
+                                be a hero in our lives.
+                                TVK is the hope we've been waiting for!"
+                            </p>
+                            <p class="text-danger fw-bold text-end">— Divya,
+                                Erode</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Victory Section -->
+        <section class="py-5">
+            <div class="container text-center">
+                <div class="display-1 mb-4">🏆</div>
+                <h2 class="section-title">TVK Victory Celebration</h2>
+                <p class="lead text-warning mb-5 px-3">
+                    The people have spoken! TVK's victory marks the beginning of
+                    a new era for Tamil Nadu.
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-number">🎬</div>
+                            <div class="text-light">Cinema Legend</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-number">68+</div>
+                            <div class="text-light">Blockbuster Films</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <div class="text-light">Years in Cinema</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-number">🏛️</div>
+                            <div class="text-light">Political Leader</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tvk-card">
+                    <h3 class="text-warning fs-2 mb-4">The Journey
+                        Continues</h3>
+                    <p class="text-light lead px-3">
+                        While we bid an emotional farewell to Thalapathy the
+                        actor, we embrace Thalapathy the leader with hope and
+                        excitement.
+                        His transition from cinema to politics is not an end,
+                        but a beautiful new beginning.
+                        <strong class="text-warning">This is not goodbye—this is
+                            see you in a new avatar!</strong>
+                    </p>
+                    <div class="display-4 my-4">🎬 ➡️ 🏛️ ➡️ 🏆</div>
+                    <p class="text-danger fs-4 fw-bold">From Reel Hero to Real
+                        Hero</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <h3 class="text-warning mb-3"
+                    style="font-family: 'Cinzel', serif;">THALAPATHY VIJAY</h3>
+                <p class="text-light mb-3">A tribute website celebrating the
+                    legendary journey from cinema to politics</p>
+                <p class="text-warning fs-5 mb-4">தமிழக வெற்றி கழகம் | TVK</p>
+                <div class="d-flex justify-content-center gap-4 flex-wrap mb-4">
+                    <span class="text-danger">🎬 Cinema Legend</span>
+                    <span class="text-warning">🏛️ Political Leader</span>
+                    <span class="text-danger">❤️ People's Hero</span>
+                </div>
+
+                <p
+                    class="text-warning fst-italic mt-3">"The greatest journey is the one that serves humanity"</p>
+            </div>
+
+            <!-- SOCIAL ICONS -->
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://www.facebook.com/TVKVijayHQ/"
+                    class="tvk-social">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a
+                    href="https://www.instagram.com/actorvijay?igsh=Z282bXN0NTQ2ZGkx"
+                    class="tvk-social">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://x.com/TVKPartyHQ" class="tvk-social">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a
+                    href="https://youtube.com/@tvkvijayhq-offl?si=MOXfjM26kcwDH37T"
+                    class="tvk-social">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <p class="text-secondary small text-center">©2026 Thalapathy Vijay
+                Tribute
+                | Created with love by <span class="text-danger">Thalapathy
+                    Fan</span></p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+  window.addEventListener('scroll',()=>{
+    document.querySelector('.navbar').classList.toggle('scrolled',window.scrollY>100)
+  })
+</script>
+
+
+    </body>
+</html>
